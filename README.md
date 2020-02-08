@@ -20,13 +20,17 @@ chmod +x /usr/local/bin/docker-compose
 ### Criando diretório para presistencia de dados e baixando o repositório
 
 ```bash
-cd /opt \
-git clone https://github.com/williamnormandia/GLPI.git \
-cd /GLPI \
+cd /opt 
+
+git clone https://github.com/williamnormandia/GLPI.git
+
+cd GLPI 
+
 mkdir -p ./var/www/html/glpi \
-mkdir -p ./var/lib/mysql \
+         ./var/lib/mysql
+
 chown 472:472 ./var/lib/mysql \
-chown 472:472 ./var/lib/mysql 
+              ./var/lib/mysql 
 ```
 
 ### Executando os containers
